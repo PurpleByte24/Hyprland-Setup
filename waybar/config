@@ -1,0 +1,30 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["hyprland/workspaces"],
+  "modules-right": ["temperature", "cpu", "pulseaudio", "battery", "network", "clock"],
+
+  "clock": {
+    "format": "{:%a %d %b %H:%M}"
+  },
+  "pulseaudio": {
+    "format": "{volume}% "
+  },
+  "network": {
+    "format-wifi": "  {essid}",
+    "format-ethernet": " {ifname}",
+    "format-disconnected": " Disconnected"
+  },
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": ["", "", "", "", ""]
+  },
+  "cpu": {
+    "format": " {usage}%"
+  },
+
+  "temperature": {
+    "format": "{temperatureC}°C"
+  }
+}
+
